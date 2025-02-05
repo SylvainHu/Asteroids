@@ -1,6 +1,7 @@
 # this allows us to use code from
 # the open-source pygame library
 # throughout this file
+import pygame
 import os
 import sys
 
@@ -9,7 +10,6 @@ from asteroid import Asteroid
 from asteroidfield import AsteroidField
 from shot import Shot
 os.environ['PYGAME_HIDE_SUPPORT_PROMPT'] = "hide"
-import pygame
 from constants import *
 
 def main():
@@ -42,6 +42,11 @@ def main():
         updatable.update(dt)
 
         for asteroid in asteroids:
+            for shot in shots:
+                if asteroid.collide(shot):
+                    asteroid.split()
+                    shot.kill()
+                    
             if player.collide(asteroid):
                 print("Game over!")
                 sys.exit()
