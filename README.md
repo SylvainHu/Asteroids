@@ -14,7 +14,7 @@ Asteroids Shooter is an arcade-style game where you control a spaceship and must
 ## Installation
 
 1. Clone this repository:
-```git clone [your-repo-url]```
+```git clone https://github.com/SylvainHu/asteroids```
 
 2. Navigate to the project directory:
 ```cd [your-project-name]```
