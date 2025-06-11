@@ -19,5 +19,22 @@ Asteroids Shooter is an arcade-style game where you control a spaceship and must
 2. Navigate to the project directory:
 ```cd [your-project-name]```
 
-3. Install required dependencies:
+3. Create a virtual environment:
+```python -m venv venv```
+
+4. Activate the virtual environment:
+```source venv/bin/activate```
+
+5. Install required dependencies:
 ```pip install -r requirements.txt```
+
+## Running the Game
+
+1. Make sure your virtual environment is activated
+2. Run the game:
+```python main.py```
+
+## Deactivating Virtual Environment
+
+When you're done playing, you can deactivate the virtual environment:
+```deactivate```
